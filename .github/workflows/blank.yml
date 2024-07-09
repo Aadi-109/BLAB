@@ -45,9 +45,5 @@ jobs:
   build-db: 
     needs: build
     runs-on: windows-latest
-  
-  package:
-   needs: [build-app , build-db]
-   runs-on: windows-latest
-   steps:
+    steps:
      - run: echo Hello, windows
