@@ -36,14 +36,13 @@ jobs:
           echo test, and deploy your project.
 
 
-   build-api: 
+  build-api: 
     runs-on: windows-latest  
     steps:
       - run: echo "building api"
 
 
   build-db: 
-    needs: build
     runs-on: windows-latest
     steps:
      - run: echo Hello, windows
