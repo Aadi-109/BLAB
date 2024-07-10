@@ -15,7 +15,7 @@ jobs:
         runs-on: ubuntu-latest
         needs: job_1
         steps:
-            - uses: actions/doenload-artifacts@v2
+            - uses: actions/download-artifacts@v2
               with:
                 name: file
             - run: cat file.txt
